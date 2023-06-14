@@ -1,0 +1,40 @@
+.book-card-container{
+    width: 300px;
+    height: 400px;
+    margin: 0.6rem;
+    background-color: #fff;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.book-card-container:hover{box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;}
+
+.book-card-image{
+    box-sizing: border-box;
+    padding: 5px;
+    width: 100%;
+    height: 60%;
+}
+.book-card-details{
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.book-card-bookName{
+    font-size: 1.2rem;
+}
+.book-card-author{
+    font-size: 1rem;
+    margin: 5px;
+    color: rgb(232, 159, 22);
+}
+.book-card-pubYear{
+    margin: 4px;
+}
+.book-card-section{
+    margin: 2px;
+}
+.book-card-price{
+    font-size: 0.9rem;
+}

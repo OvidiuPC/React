@@ -1,0 +1,13 @@
+.card-btns{
+    height: 10%;
+    display: flex;
+    box-sizing: border-box;
+    padding: 10px;
+    justify-content: space-between;
+}
+
+
+.delet-card,.show-details{
+    font-size: 1rem;
+    border-radius:5px;  
+}

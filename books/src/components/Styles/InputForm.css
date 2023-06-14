@@ -1,0 +1,38 @@
+
+
+.input-form-container{
+    background-color: rgb(0, 255, 4);
+    width: auto;
+    height: 100vh;
+}
+
+.input-form-form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.input-label{
+    display: flex;
+    justify-content: space-between;
+    margin: 5px 2px 0 5px;
+
+}
+.labels{
+    font-size: 1rem;
+    font-weight: 500;
+    margin-right: 1rem;
+
+}
+.inputs{
+    box-sizing: border-box;
+    padding: 3px;
+    font-size: 0.8rem;
+    text-transform: capitalize;
+}
+
+.add-book-btn{
+    margin: 1rem ;
+    padding: 5px;
+    font-size: 1rem;
+    font-weight: 600;
+}
