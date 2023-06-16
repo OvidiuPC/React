@@ -19,7 +19,7 @@ function InputForm(props){
   const inputClass ='inputs input-';
   
 
-  const nameChangeHandler = (e)=>{setEnteredName(e.target.value)};
+  const nameChangeHandler = (e) => {setEnteredName(e.target.value)};
   const authorChangeHandler = (e)=>{setEnteredAuthor(e.target.value)};
   const yearChangeHandler = (e)=>{setEnteredYear(e.target.value)};
   const sectionChangeHandler = (e)=>{setEnteredSection(e.target.value)};
@@ -29,21 +29,22 @@ function InputForm(props){
   const sumbitHandler =(e)=>{
         e.preventDefault()
 
-        const data ={
-            bookName:enteredName,
-            bookAuthor:enteredAuthor,
-            bookPubYear:enteredYear,
-            bookSection:enteredSection,
-            bookPrice:enteredPrice,
-        }
+      const data = {
+          title: enteredName,
+          author: enteredAuthor,
+          pubYear: enteredYear,
+          section: enteredSection,
+          price: enteredPrice,
+      }
+
         props.onAddBook(data);
-
-
-     setEnteredName('');
-     setEnteredAuthor('');
-     setEnteredYear('');
-     setEnteredSection('');
-     setEnteredPrice('');
+        
+        setEnteredName('');
+        setEnteredAuthor('');
+        setEnteredYear('');
+        setEnteredSection('');
+        setEnteredPrice('');
+     
   }
 
   const filteredHandle =(selected)=>{
@@ -53,7 +54,7 @@ function InputForm(props){
     
   }
 
-
+ 
   
     return(
 
@@ -88,7 +89,7 @@ function InputForm(props){
             <button type="submit"  className="add-book-btn">Add Book</button>
          </form>
             <InputFilter filteredSection={filteredSection} onFilter={filteredHandle} />
-
+            
         </div>
     )
 }

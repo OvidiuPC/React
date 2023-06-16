@@ -5,13 +5,6 @@ import Container from './components/JSX/Container'
 import CardContainer from './components/JSX/CardContainer'
 
 const LIBRARY = [
-  // {
-  //   title: 'Singur pe lume',
-  //   author: 'Jules Vern',
-  //   pubYear: 2000,
-  //   section: 'S.f.',
-  //   price: 19.99,
-  // },
   {
     title: 'Orizonturi Rosii',
     author: 'Ion Mihai Pacepa',
@@ -24,9 +17,9 @@ const LIBRARY = [
 function App() {
   const [books, setBooks] = useState(LIBRARY);
 
-  const addBookHandler = (book) => {
+ const  addBookHandler = (book) => {
    setBooks((prevBook)=>{
-   return [book,...prevBook]
+   return [book, ...prevBook]
  
    });
   };

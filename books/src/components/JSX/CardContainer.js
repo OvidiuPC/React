@@ -1,15 +1,14 @@
 import React from 'react'
 
 import '../Styles/CardContainer.css'
-import BookOutputCard from './BookOutputCard'
+import BookCard from './BookCard'
 
-// CardContainer.js
-function CardContainer(props) {
+
+function CardContainer({items}) {
   return (
     <div className="card-container">
-      {props.items.map((item) => (
-        <BookOutputCard
-          key={item.id} // Adăugați o cheie unică pentru fiecare element
+      {items.map((item) => (
+        <BookCard //aici trebuie sa fixezi denumirea
           title={item.title}
           author={item.author}
           pubYear={item.pubYear}
@@ -20,6 +19,7 @@ function CardContainer(props) {
     </div>
   );
 }
+
 
 
 export default CardContainer
